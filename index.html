@@ -63,6 +63,7 @@
 </style>
 
 <body>
+  <div class="fixed z-10 w-[100%]">
   <!-- header -->
   <header class="lg:h-10 bg-black md:h-24 flex text-white  justify-evenly items-center">
     <div class="icon w-[30%] flex justify-between text-xs">
@@ -81,7 +82,7 @@
   </header>
 
   <!-- nav bar -->
-<nav class="h-20 bg-white flex items-center justify-between px-5 lg:px-10">
+<nav class="min-h-20 min-w-full bg-white flex items-center justify-between px-5 lg:px-10">
 
   
   <div class="flex items-center gap-2">
@@ -101,17 +102,35 @@
 
 
   
-  <ul class="font-semibold flex w-[45%] justify-evenly lg:flex hidden">
+<ul class="font-semibold  w-[45%] justify-evenly lg:flex hidden">
+  <li>
+    <a href="#home" class="hover:text-orange-600">Home</a>
+  </li>
 
-    <li class="hover:text-orange-600 cursor-pointer">Home</li>
-    <li class="hover:text-orange-600 cursor-pointer">About</li>
-    <li class="hover:text-orange-600 cursor-pointer">Menu</li>
-    <li class="hover:text-orange-600 cursor-pointer">Chefs</li>
-    <li class="hover:text-orange-600 cursor-pointer">Reservation</li>
-    <li class="hover:text-orange-600 cursor-pointer">Reviews</li>
-    <li class="hover:text-orange-600 cursor-pointer">Contact</li>
+  <li>
+    <a href="#about" class="hover:text-orange-600">About</a>
+  </li>
 
-  </ul>
+  <li>
+    <a href="#menu" class="hover:text-orange-600">Menu</a>
+  </li>
+
+  <li>
+    <a href="#chefs" class="hover:text-orange-600">Chefs</a>
+  </li>
+
+  <li>
+    <a href="#reservation" class="hover:text-orange-600">Reservation</a>
+  </li>
+
+  <li>
+    <a href="#reviews" class="hover:text-orange-600">Reviews</a>
+  </li>
+
+  <li>
+    <a href="#contact" class="hover:text-orange-600">Contact</a>
+  </li>
+</ul>
 
 
   
@@ -137,10 +156,11 @@
   </div>
 
 </nav>
+</div>
 
   <!-- home page -->
-  <div
-    class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-red-100 px-4 py-10 sm:px-6 md:min-h-[70vh] md:px-8 lg:min-h-[110vh] lg:px-12">
+  <div id="home"
+    class="relative z-0 flex min-h-screen  top-10 w-full items-center justify-center overflow-hidden bg-red-100 px-4 py-10 sm:px-6 md:min-h-[70vh] md:px-8 lg:min-h-[110vh] lg:px-12">
     <h1
       class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-serif text-[5rem] font-bold text-gray-900 opacity-10 sm:text-[8rem] md:text-[10rem] lg:text-[15rem] xl:text-[20rem]">
       FOOD
@@ -202,8 +222,8 @@
 
   <!-- moving bar -->
 
-  <div class="w-full overflow-hidden bg-orange-600 font-bold text-white py-5 whitespace-nowrap">
-    <ul class="flex w-max items-center gap-12 animate-marquee">
+  <div class="w-full  overflow-hidden  bg-orange-600 font-bold text-white py-10  whitespace-nowrap">
+    <ul class="flex w-max items-center gap-12 animate-marquee ">
       <li><i class="ri-arrow-drop-right-fill"></i>Crispy Fried Chiken</li>
       <li><i class="ri-arrow-drop-right-fill"></i>Gourment Burgers</li>
       <li><i class="ri-arrow-drop-right-fill"></i>Artisen Pizzas</li>
@@ -274,7 +294,7 @@
   </div>
 
   <!-- third section story section -->
-  <div class="min-h-[100vh] flex flex-col lg:flex-row justify-center gap-10 bg-white px-5 md:px-10 lg:px-16 py-10">
+  <div id="about" class="min-h-[100vh] flex flex-col lg:flex-row justify-center gap-10 bg-white px-5 md:px-10 lg:px-16 py-10">
 
     <div class="justify-center items-center flex w-full lg:w-[40%] h-auto lg:h-[90vh]">
 
@@ -411,7 +431,7 @@
   </div>
 
   <!-- fourth sec menu -->
-  <div class=" flex flex-col gap-4  bg-red-100 justify-center">
+  <div id="menu" class="flex flex-col gap-4  bg-red-100 justify-center">
     <p class=" text-center font-mono text-red-300 text-2xl">Whats cooking</p>
     <h2 class="text-6xl  text-center font-bold ">Our Delicious <span class=" text-orange-600">Menu</span></h2>
     <div class="flex justify-center">
@@ -618,7 +638,7 @@
 
   <!-- culenery teamseven -->
 
-  <div class="min-h-[80vh]  bg-blue-50 flex flex-col gap-10 justify-center items-center">
+  <div id="chefs" class="min-h-[80vh]  bg-blue-50 flex flex-col gap-10 justify-center items-center">
     <div class=" text-center">
       <p class="text-xl font-serif text-red-500">The Culinery Team</p>
       <h2 class="text-5xl font-bold">Meet <span class="border-b-4 text-red-600">Our</span> Expert chefs</h2>
@@ -761,7 +781,7 @@
   </div>
 
   <!-- nineth section feedbacks -->
-  <div class="h-[80vh] flex flex-col gap-10 justify-center">
+  <div id="reviews" class="h-[80vh] flex flex-col gap-10 justify-center">
     <div class="flex flex-col justify-center items-center ">
       <p class="text-orange-500 text-xl font-serif ">What People Says</p>
       <h6 class="text-5xl font-bold font-serif">Our <span class="text-orange-600 border-b-4">Customers</span> Feedback
@@ -894,7 +914,7 @@
 
   <!-- 10th booking section  -->
 
-  <div class=" min-h-[100vh] bg-red-100">
+  <div id="reservation" class=" min-h-[100vh] bg-red-100">
     <div class="flex justify-center flex-col items-center gap-3 ">
       <p class="text-xl font-serif text-red-600">Book A Table</p>
       <h1 class="text-5xl font-bold">Make a <span class="text-red-600 border-b-4">Reservation</span></h1>
@@ -935,7 +955,7 @@
           </div>
         </div>
       </div>
-      <div class=" min-h-[70vh] w-[60%] border-2 bg-white rounded-3xl font-bold">
+      <div class=" min-h-[70vh] w-[60%] shadow-2xl shadow-black bg-white rounded-3xl font-bold">
     <div class="flex p-5 justify-evenly gap-5">
         <div class=" w-[50%]">
             <label for="name">Full Name*</label> <br>
