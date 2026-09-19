@@ -7,6 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
   <title>Document</title>
 </head>
 <style>
@@ -24,6 +25,37 @@
         transform: translateX(-50%);
       }
     }
+  }
+</style>
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+
+
+  .swiper {
+    width: 90%;
+    height: 35%;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+   background-color: beige;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>
 
@@ -119,7 +151,8 @@
 
       <div class="flex w-full items-center justify-center sm:w-[80%] md:w-[70%] lg:w-[50%]">
         <div
-          class="h-[250px] w-[250px] rounded-full bg-[url('/images/burger.png')] bg-cover bg-center bg-no-repeat sm:h-[320px] sm:w-[320px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px] xl:h-[520px] xl:w-[520px]">
+          class="h-[250px] w-[250px] rounded-full bg-[url('/images/burger.png')] bg-cover bg-center bg-no-repeat sm:h-[320px] sm:w-[320px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px] xl:h-[520px] xl:w-[520px]"
+          data-aos="zoom-in" data-aos="duration-4000">
         </div>
       </div>
 
@@ -153,7 +186,8 @@
         menu</P>
     </div>
     <div
-      class=" w-[90%]  gap-6 justify-center items-center grid grid-cols-6 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2">
+      class=" w-[90%]  gap-6 justify-center items-center grid grid-cols-6 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2"
+      Fade data-aos="fade-up" data-aos="duration-3000">
       <div
         class="box  flex flex-col justify-center items-center min-h-[25vh]  bg-white hover:border-5  hover:border-red-800  hover:translate-y-4 transition duration-300 rounded-2xl">
         <img src="./images/1.jpg" class="w-25 rounded-full">
@@ -198,7 +232,8 @@
     <div class="justify-center items-center flex w-full lg:w-[40%] h-auto lg:h-[90vh]">
 
       <div
-        class="rounded-3xl flex justify-end items-end h-[400px] sm:h-[450px] md:h-[500px] lg:h-[65%] w-full sm:w-[80%] md:w-[65%] lg:w-[70%] bg-[url(/images/about1.jpg)] bg-cover bg-center relative">
+        class="rounded-3xl flex justify-end items-end h-[400px] sm:h-[450px] md:h-[500px] lg:h-[65%] w-full sm:w-[80%] md:w-[65%] lg:w-[70%] bg-[url(/images/about1.jpg)] bg-cover bg-center relative"
+        data-aos="fade-right" data-aos="duration-3000">
 
 
         <div class="p-5 sm:p-7 md:p-8 lg:p-10 bg-red-700 text-center rounded-3xl flex-col relative z-20 text-white
@@ -350,7 +385,8 @@
       </ul>
     </div>
     <div class="flex justify-center px-4 ">
-      <div class="grid grid-cols-3 gap-8 min-h-[120vh] w-[85%] md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 sm:h-max ">
+      <div class="grid grid-cols-3 gap-8 min-h-[120vh] w-[85%] md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 sm:h-max"
+        data-aos="fade-up" data-aos="duration-3000">
         <div
           class="bg-white rounded-3xl hover:translate-y-2 sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
           <div class=" h-[55%] bg-[url(images/1.jpg)] bg-cover bg-center rounded-2xl"></div>
@@ -466,25 +502,373 @@
         class=" rounded-3xl font-bold text-white p-3 px-10 bg-orange-600 hover:translate-y-2 transition duration-300  hover:shadow-orange-600">View
         Full Menu</button></div>
   </div>
-  <div class="h-[90vh] bg-amber-950 flex flex-col justify-around lg:flex-row md:flex-col "> 
-    <div class="w-[30%] h-full border-white text-white flex  flex-col justify-center "> 
-     <div class=""> 
-       <button class="bg-yellow-500 text-black text-xl rounded-3xl p-2"> <i class="ri-flashlight-fill "></i>LIMITED TIME OFFER</button> 
-      <p class="text-7xl font-medium">Get 30% Of Our Signature Burge Meal</p> 
- 
-      <p class="mt-3">Don't miss our weekend special - grab our award-winning signature burger combo with loaded fries and a premium 
-        shake at an unbeatable price.</p> 
-        <time datetime="" class=""></time> 
-        <button class="mt-6 bg-orange-600 p-3 px-10 rounded-3xl">Grab The Deal</button> 
-     </div> 
-    </div> 
-    <div class="w-[50%] h-full border-white  flex justify-center items-center"> 
-      <div class="bg-[url(images/off.jpg)] w-[60%] h-[60%]  bg-cover" data-aos="zoom-in-up" data-aos="duration-3000"></div> 
-    </div> 
+  <div class="h-[90vh] bg-amber-950 flex flex-col justify-around lg:flex-row md:flex-col ">
+    <div class="w-[30%] h-full border-white text-white flex  flex-col justify-center ">
+      <div class="">
+        <button class="bg-yellow-500 text-black text-xl rounded-3xl p-2"> <i class="ri-flashlight-fill "></i>LIMITED
+          TIME OFFER</button>
+        <p class="text-7xl font-medium">Get 30% Of Our Signature Burge Meal</p>
+
+        <p class="mt-3">Don't miss our weekend special - grab our award-winning signature burger combo with loaded fries
+          and a premium
+          shake at an unbeatable price.</p>
+        <time datetime="" class=""></time>
+        <button class="mt-6 bg-orange-600 p-3 px-10 rounded-3xl">Grab The Deal</button>
+      </div>
+    </div>
+    <div class="w-[50%] h-full border-white  flex justify-center items-center">
+      <div class="bg-[url(images/off.jpg)] w-[60%] h-[60%]  bg-cover" data-aos="zoom-in-up" data-aos="duration-3000">
+      </div>
+    </div>
+  </div>
+
+  <div class="h-[80vh] flex flex-col gap-8 bg-red-100">
+    <div>
+      <p class="text-xl font-mono text-orange-400 text-center">Food Showcase</p>
+      <h3 class="text-5xl font-semibold font-serif text-center">Let's See <span
+          class="text-orange-600 border-b-5">Our</span> Fast Food</h3>
+    </div>
+    <div class=" h-[50vh] flex justify-center gap-4" data-aos="fade-up" data-aos="duration-4000">
+      <div
+        class="h-[60vh] w-[30%] rounded-2xl group overflow-hidden shadow-2xl hover:shadow-inner text-center relative hover:shadow-black">
+        <!-- Image: Removed -z-10, added absolute inset-0 and object-cover to act as a proper background -->
+        <img src="./images/work1.jpg" alt="Gourmet Burger"
+          class="absolute inset-0 h-full w-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-300 ease-out z-0">
+
+        <!-- Centered overlay text with a slight text-shadow tracking for legibility -->
+        <div
+          class="absolute hidden inset-0 group-hover:flex items-end justify-start bg-black/20 z-10  transition-all duration-300 ease-out">
+          <span class="text-xl font-bold text-white drop-shadow-lg p-2"> <i
+              class="ri-arrow-up-down-fill text-orange-600"></i>Gourmet Burger</span>
+        </div>
+      </div>
+
+      <div class="h-[60vh] gap-4  w-[60%] grid grid-cols-2">
+        <div
+          class=" flex justify-start items-end rounded-3xl p-2 hover:scale-95 transition duration-300  bg-[url(images/work1.jpg)] bg-cover">
+          <p class=" text-white text-xl"><i class="ri-arrow-up-down-fill text-orange-600"></i>Wood-Fired Pizza</p>
+        </div>
+        <div
+          class=" flex justify-start items-end rounded-3xl p-3 hover:scale-95 transition duration-300 bg-[url(images/work2.jpg)] bg-cover">
+          <p class="text-white text-xl"> <i class="ri-arrow-up-down-fill text-orange-600"></i>Crispy Fried Chicken</p>
+
+        </div>
+        <div
+          class=" flex justify-start items-end rounded-3xl p-3 hover:scale-95 transition duration-300 bg-center bg-[url(images/work4.jpg)] bg-cover">
+          <p class="text-white text-xl"> <i class="ri-arrow-up-down-fill text-orange-600"></i>Sweet Deserts</p>
+        </div>
+        <div
+          class=" flex justify-start items-end rounded-3xl p-3 hover:scale-95 transition duration-300 bg-[url(images/work5.jpg)] bg-cover">
+          <p class="text-white text-xl"> <i class="ri-arrow-up-down-fill text-orange-600"></i>Fresh Rap And Rolls</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-[100vh] bg-white">
+    <div class=" text-center flex flex-col gap-3 mt-3">
+      <p class="text-2xl font-serif text-red-500">Our Journey</p>
+      <h2 class="text-5xl font-bold">A History Of <span class="text-red-600 border-b-4">Restaurent</span></h2>
+      <p class="text-xl">From humble beginnings to the city's most beloved restaurant - <br> every chapter written with
+        passion.</p>
+    </div>
+  </div>
+
+  <div class="h-[80vh]  bg-blue-50 flex flex-col gap-10 justify-center items-center">
+    <div class=" text-center">
+      <p class="text-xl font-serif text-red-500">The Culinery Team</p>
+      <h2 class="text-5xl font-bold">Meet <span class="border-b-4 text-red-600">Our</span> Expert chefs</h2>
+    </div>
+
+    <div class=" grid grid-cols-4 h-[50vh] gap-5 p-3 w-[85%]" data-aos="fade-up" data-aos="duration-3000">
+      <div
+        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
+        <div class="bg-[url(images/chef.jpg)] rounded-2xl bg-cover h-[70%]"></div>
+        <div class=" text-center p-3">
+          <p class="font-bold text-xl">Alice Mortal</p>
+          <p class="font-bold text-red-500">Head Chef</p>
+          <p class="text-gray-500 font-semibold">12 Year Experience</p>
+        </div>
+      </div>
+      <div
+        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
+        <div class="bg-[url(images/chef2.jpg)] rounded-2xl bg-cover h-[70%]"></div>
+        <div class=" text-center p-3">
+          <p class="font-bold text-xl">Michal Corn</p>
+          <p class="font-bold text-red-500">Grill Master</p>
+          <p class="text-gray-500 font-semibold">12 Year Experience</p>
+        </div>
+      </div>
+      <div
+        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
+        <div class="bg-[url(images/chef3.jpg)] rounded-2xl bg-cover h-[70%]"></div>
+        <div class=" text-center p-3">
+          <p class="font-bold text-xl">Faz Chowdel</p>
+          <p class="font-bold text-red-500">Pestry Chef</p>
+          <p class="text-gray-500 font-semibold">10 Year Experience</p>
+        </div>
+      </div>
+      <div
+        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
+        <div class="bg-[url(images/chef4.jpg)] rounded-2xl bg-cover h-[70%]"></div>
+        <div class=" text-center p-3">
+          <p class="font-bold text-xl">Willum Latinum</p>
+          <p class="font-bold text-red-500">Pizza Artist</p>
+          <p class="text-gray-500 font-semibold">9 Year Experience</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="h-[70vh] bg-green-900  flex justify-center gap-8 items-center ">
+    <div class="h-[50vh] w-[30%] font-bold p-6 rounded-3xl shadow-2xl text-yellow-50">
+      <div class="flex justify-between p-5 border-b-2 ">
+        <p><i class="ri-calendar-line"></i>monday-Tuesday</p>
+        <p>Closed</p>
+      </div>
+      <div class="flex justify-between p-5 border-b-2">
+        <p>Wednesday-Thursday</p>
+        <p> <span class="font-black text-2xl">.</span>Closed</p>
+      </div>
+      <div class="flex justify-between p-5 border-b-2">
+        <p>Friday</p>
+        <p>09:00-10:00</p>
+      </div>
+      <div class="flex justify-between p-5 border-b-2">
+        <p>monday-Tuesday</p>
+        <p>Closed</p>
+      </div>
+      <div class="flex justify-between p-5 border-b-2">
+        <p>monday-Tuesday</p>
+        <p>Closed</p>
+      </div>
+    </div>
+    <div class=" h-[30vh] w-[20%] text-center rounded-3xl flex flex-col gap-2 text-white bg-orange-700">
+      <i class="ri-truck-fill text-6xl"></i>
+      <p class="text-3xl">Order Online</p>
+      <p class="text-xl">Get Hot Food Delivery In 20 Min</p>
+      <div><button
+          class="p-3 px-7 font-bold rounded-2xl bg-white text-xl text-orange-500 hover:translate-y-2 transition duration-300">Order
+          Now?</button></div>
+    </div>
+    <div class=" shadow-2xl text-yellow-50  rounded-3xl p-6 h-[35vh] w-[30%] flex flex-col gap-5 ">
+      <i class="ri-map-pin-fill font-bold text-xl">Find Us</i>
+      <div class="flex border-b-2 p-2 font-bold  justify-between">
+        <i class="ri-map-pin-fill ">Address</i>
+        <p>42 Flvour Street NY</p>
+      </div>
+      <div class=" flex justify-between p-2 font-bold border-b-2">
+        <i class="ri-phone-fill">Phone</i>
+        <p>+91 8857339238</p>
+      </div>
+      <div class="flex justify-between p-2 border-b-2 font-bold">
+        <i class="ri-mail-fill">Email</i>
+        <p>Shiva@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-[80vh] flex flex-col gap-10 justify-center">
+    <div class="flex flex-col justify-center items-center ">
+      <p class="text-orange-500 text-xl font-serif ">What People Says</p>
+      <h6 class="text-5xl font-bold font-serif">Our <span class="text-orange-600 border-b-4">Customers</span> Feedback
+      </h6>
+    </div>
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" data-aos="fade-up" data-aos="duration-2000">
+        <div class="swiper-slide hover:scale-105 hover:translate-x-2 transition duration-4000 p-4 flex flex-col gap-3 text-black rounded-3xl"  data-aos="flip-left" data-aos="duration-2000">
+          <div class="text-yellow-300">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="  w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+            <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+            
+          </div>
+
+        </div>
+        <div class="swiper-slide rounded-3xl p-4 flex flex-col gap-3 text-black" data-aos="flip-left" data-aos="duration-2000">
+           <div class="text-yellow-300">
+            <i class="ri-star-fill">
+
+            </i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+            <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+          </div>
+
+        </div>
+        <div class="swiper-slide p-4 flex flex-col gap-3 rounded-3xl" data-aos="flip-left" data-aos="duration-2000">
+           <div class="text-yellow-300">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+            <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+          </div>
+        </div>
+        <div class="swiper-slide rounded-3xl p-4 flex flex-col gap-3" data-aos="flip-left" data-aos="duration-2000">
+           <div class="text-yellow-300">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+            <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+          </div>
+        </div>
+        <div class="swiper-slide rounded-3xl p-4 flex flex-col gap-3" data-aos="flip-left" data-aos="duration-2000">
+           <div class="text-yellow-300">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+            <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+          </div>
+        </div>
+        <div class="swiper-slide rounded-3xl p-4 flex flex-col gap-3" data-aos="flip-left" data-aos="duration-2000">
+           <div class="text-yellow-300">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div>
+            <p>
+              The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super
+              friendly staff. Highly recommended!</p>
+          </div>
+          <div class="h-10 flex gap-3  items-center">
+            <div class="w-10 h-10 border-2 rounded-full border-red-700 "><img src="./images/profile.jpg" class=" rounded-full size-10"></div>
+           <p>Monica Willber <br> <span class="font-light text-xs">food bloger</span></p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="h-[100vh] bg-red-100">
+    <div class="flex justify-center flex-col items-center gap-3">
+      <p class="text-xl font-serif text-red-600">Book A Table</p>
+      <h1 class="text-5xl font-bold">Make a <span class="text-red-600 border-b-4">Reservation</span></h1>
+      <p class="text-center font-semibold">Reserve your table for a memorable dining experience. We <br> recommend booking 24 hours in advance for weekend <br> evenings.</p>
+    </div>
+
+    <div class="flex  justify-evenly p-5">
+      <div class="h-[50vh] p-5 border-2 w-[30%] bg-black text-white flex flex-col gap-3 rounded-3xl opacity-80">
+        <p class="text-3xl font-serif">Contact Info</p>
+        <p class="font-bold">We're happy to help you plan the perfect dining experience.</p>
+
+        <div class="flex gap-2">
+          <i class="ri-timer-2-fill text-4xl bg-amber-800 rounded-xl p-2"></i>
+          <div class="font-bold">
+            <p>OPENING HOURS</p>
+            <P>Wed-Sun,9AM -11PM</P>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <i class="ri-phone-fill text-4xl bg-amber-800 rounded-xl p-2"></i>
+          <div class="font-bold">
+            <p>OPENING HOURS</p>
+            <P>Wed-Sun,9AM -11PM</P>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <i class="ri-team-fill text-4xl bg-amber-800 rounded-xl p-2"></i>
+          <div class="font-bold">
+            <p>OPENING HOURS</p>
+            <P>Wed-Sun,9AM -11PM</P>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <i class="ri-map-pin-fill text-4xl bg-amber-800 rounded-xl p-2"></i>
+          <div class="font-bold">
+            <p>OPENING HOURS</p>
+            <P>Wed-Sun,9AM -11PM</P>
+          </div>
+        </div>
+      </div>
+      <div class="h-[70vh] w-[60%] border-2">
+
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView:3,
+    spaceBetween: 30,
+    loop: true,
+    freeMode: true,
+           autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 </html>
