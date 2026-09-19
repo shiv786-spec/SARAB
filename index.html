@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
   <title>Document</title>
 </head>
+<!-- style -->
 <style>
   @layer utilities {
     .animate-marquee {
@@ -27,6 +28,8 @@
     }
   }
 </style>
+
+<!-- swiper style -->
 <style>
   html,
   body {
@@ -60,6 +63,7 @@
 </style>
 
 <body>
+  <!-- header -->
   <header class="lg:h-10 bg-black md:h-24 flex text-white  justify-evenly items-center">
     <div class="icon w-[30%] flex justify-between text-xs">
       <i class="ri-phone-fill ">+1(800)123-4567</i>
@@ -75,29 +79,66 @@
       <i class="ri-youtube-fill  hover:bg-red-600 hover:rounded-full text-2xl hover:border-2"></i>
     </div>
   </header>
-  <nav class="h-20 bg-white flex items-center justify-evenly ">
 
-    <div class="flex items-center gap-2">
-      <div><i class="ri-restaurant-line text-2xl bg-orange-600 rounded-full p-2"></i></div>
-      <div>
-        <h1 class="text-4xl font-bold">Sarab</h1>
-        <p class="text-sm font-light">FASTFOOD AND RESTOURANT</p>
-      </div>
+  <!-- nav bar -->
+<nav class="h-20 bg-white flex items-center justify-between px-5 lg:px-10">
+
+  
+  <div class="flex items-center gap-2">
+
+    <div>
+      <i class="ri-restaurant-line text-2xl bg-orange-600 rounded-full p-2"></i>
     </div>
-    <ul class=" font-semibold flex w-[45%] justify-evenly md:hidden sm:hidden lg:flex">
-      <li>Home</li>
-      <li>About</li>
-      <li>Menu</li>
-      <li>Chefs</li>
-      <li>Reservation</li>
-      <li>Reviews</li>
-      <li>Contact</li>
-    </ul>
-    <div class="flex gap-2 items-center">
-      <i class="ri-search-line text-2xl font-bold"></i>
-      <button class="bg-orange-600 px-6 py-2 rounded-3xl">ORDER NOW</button>
+
+    <div>
+      <h1 class="text-4xl font-bold sm:text-3xl">Sarab</h1>
+      <p class="text-sm font-light sm:text-[10px]">
+        FASTFOOD AND RESTOURANT
+      </p>
     </div>
-  </nav>
+
+  </div>
+
+
+  
+  <ul class="font-semibold flex w-[45%] justify-evenly lg:flex hidden">
+
+    <li class="hover:text-orange-600 cursor-pointer">Home</li>
+    <li class="hover:text-orange-600 cursor-pointer">About</li>
+    <li class="hover:text-orange-600 cursor-pointer">Menu</li>
+    <li class="hover:text-orange-600 cursor-pointer">Chefs</li>
+    <li class="hover:text-orange-600 cursor-pointer">Reservation</li>
+    <li class="hover:text-orange-600 cursor-pointer">Reviews</li>
+    <li class="hover:text-orange-600 cursor-pointer">Contact</li>
+
+  </ul>
+
+
+  
+  <div class="flex gap-4 items-center">
+
+   
+    <i class="ri-search-line text-2xl font-bold cursor-pointer"></i>
+
+   
+    <button
+      class="bg-orange-600 text-white px-6 py-2 rounded-3xl
+             hover:bg-orange-700 transition
+             sm:px-4 sm:py-2 sm:text-sm"
+    >
+      ORDER NOW
+    </button>
+
+   
+    <i
+      class="ri-menu-line text-3xl font-bold cursor-pointer lg:hidden"
+    ></i>
+
+  </div>
+
+</nav>
+
+  <!-- home page -->
   <div
     class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-red-100 px-4 py-10 sm:px-6 md:min-h-[70vh] md:px-8 lg:min-h-[110vh] lg:px-12">
     <h1
@@ -159,6 +200,8 @@
     </div>
   </div>
 
+  <!-- moving bar -->
+
   <div class="w-full overflow-hidden bg-orange-600 font-bold text-white py-5 whitespace-nowrap">
     <ul class="flex w-max items-center gap-12 animate-marquee">
       <li><i class="ri-arrow-drop-right-fill"></i>Crispy Fried Chiken</li>
@@ -177,6 +220,8 @@
       <li><i class="ri-arrow-drop-right-fill"></i>Griled Sandwichs</li>
     </ul>
   </div>
+
+  <!-- second section -->
   <div class=" min-h-[80vh] gap-20 bg-red-100 flex justify-center flex-col items-center">
     <div class=" flex justify-center flex-col items-center">
       <p class=" text-orange-500 font-mono text-2xl">What We Offer</p>
@@ -227,6 +272,8 @@
 
     </div>
   </div>
+
+  <!-- third section story section -->
   <div class="min-h-[100vh] flex flex-col lg:flex-row justify-center gap-10 bg-white px-5 md:px-10 lg:px-16 py-10">
 
     <div class="justify-center items-center flex w-full lg:w-[40%] h-auto lg:h-[90vh]">
@@ -363,6 +410,7 @@
 
   </div>
 
+  <!-- fourth sec menu -->
   <div class=" flex flex-col gap-4  bg-red-100 justify-center">
     <p class=" text-center font-mono text-red-300 text-2xl">Whats cooking</p>
     <h2 class="text-6xl  text-center font-bold ">Our Delicious <span class=" text-orange-600">Menu</span></h2>
@@ -502,8 +550,10 @@
         class=" rounded-3xl font-bold text-white p-3 px-10 bg-orange-600 hover:translate-y-2 transition duration-300  hover:shadow-orange-600">View
         Full Menu</button></div>
   </div>
-  <div class="h-[90vh] bg-amber-950 flex flex-col justify-around lg:flex-row md:flex-col ">
-    <div class="w-[30%] h-full border-white text-white flex  flex-col justify-center ">
+
+  <!-- fifth section  -->
+  <div class="h-[90vh] bg-amber-950 flex flex-col justify-evenly lg:flex-row md:flex-col sm:justify-center">
+    <div class="w-[30%] h-full border-white text-white flex  flex-col justify-center sm:w-full sm:flex sm:text-center">
       <div class="">
         <button class="bg-yellow-500 text-black text-xl rounded-3xl p-2"> <i class="ri-flashlight-fill "></i>LIMITED
           TIME OFFER</button>
@@ -513,24 +563,25 @@
           and a premium
           shake at an unbeatable price.</p>
         <time datetime="" class=""></time>
-        <button class="mt-6 bg-orange-600 p-3 px-10 rounded-3xl">Grab The Deal</button>
+        <button class="mt-6 bg-orange-600 p-3 px-10 rounded-3xl hover:translate-y-3 transition-all duration-300">Grab The Deal</button>
       </div>
     </div>
-    <div class="w-[50%] h-full border-white  flex justify-center items-center">
-      <div class="bg-[url(images/off.jpg)] w-[60%] h-[60%]  bg-cover" data-aos="zoom-in-up" data-aos="duration-3000">
+    <div class="w-[50%] h-full border-white  flex justify-center items-center sm:w-full">
+      <div class="bg-[url(images/off.jpg)] w-[60%] h-[60%]  bg-cover rounded-3xl" data-aos="zoom-in-up" data-aos="duration-3000">
       </div>
     </div>
   </div>
 
-  <div class="h-[80vh] flex flex-col gap-8 bg-red-100">
+  <!-- food showcase sixth -->
+  <div class="min-h-[80vh] flex flex-col gap-8 bg-red-100 ">
     <div>
       <p class="text-xl font-mono text-orange-400 text-center">Food Showcase</p>
       <h3 class="text-5xl font-semibold font-serif text-center">Let's See <span
           class="text-orange-600 border-b-5">Our</span> Fast Food</h3>
     </div>
-    <div class=" h-[50vh] flex justify-center gap-4" data-aos="fade-up" data-aos="duration-4000">
+    <div class=" h-[50vh] flex justify-center gap-4 md:flex-col sm:flex-col  lg:flex-row" data-aos="fade-up" data-aos="duration-4000">
       <div
-        class="h-[60vh] w-[30%] rounded-2xl group overflow-hidden shadow-2xl hover:shadow-inner text-center relative hover:shadow-black">
+        class="h-[60vh] w-[30%] md:w-full rounded-2xl group overflow-hidden shadow-2xl hover:shadow-inner text-center relative hover:shadow-black">
         <!-- Image: Removed -z-10, added absolute inset-0 and object-cover to act as a proper background -->
         <img src="./images/work1.jpg" alt="Gourmet Burger"
           class="absolute inset-0 h-full w-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-300 ease-out z-0">
@@ -543,7 +594,7 @@
         </div>
       </div>
 
-      <div class="h-[60vh] gap-4  w-[60%] grid grid-cols-2">
+      <div class="h-[60vh] gap-4 w-[60%] md:w-full sm:w-full grid grid-cols-2">
         <div
           class=" flex justify-start items-end rounded-3xl p-2 hover:scale-95 transition duration-300  bg-[url(images/work1.jpg)] bg-cover">
           <p class=" text-white text-xl"><i class="ri-arrow-up-down-fill text-orange-600"></i>Wood-Fired Pizza</p>
@@ -565,64 +616,104 @@
     </div>
   </div>
 
-  <div class="h-[100vh] bg-white">
-    <div class=" text-center flex flex-col gap-3 mt-3">
-      <p class="text-2xl font-serif text-red-500">Our Journey</p>
-      <h2 class="text-5xl font-bold">A History Of <span class="text-red-600 border-b-4">Restaurent</span></h2>
-      <p class="text-xl">From humble beginnings to the city's most beloved restaurant - <br> every chapter written with
-        passion.</p>
-    </div>
-  </div>
+  <!-- culenery teamseven -->
 
-  <div class="h-[80vh]  bg-blue-50 flex flex-col gap-10 justify-center items-center">
+  <div class="min-h-[80vh]  bg-blue-50 flex flex-col gap-10 justify-center items-center">
     <div class=" text-center">
       <p class="text-xl font-serif text-red-500">The Culinery Team</p>
       <h2 class="text-5xl font-bold">Meet <span class="border-b-4 text-red-600">Our</span> Expert chefs</h2>
     </div>
 
-    <div class=" grid grid-cols-4 h-[50vh] gap-5 p-3 w-[85%]" data-aos="fade-up" data-aos="duration-3000">
-      <div
-        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
-        <div class="bg-[url(images/chef.jpg)] rounded-2xl bg-cover h-[70%]"></div>
-        <div class=" text-center p-3">
-          <p class="font-bold text-xl">Alice Mortal</p>
-          <p class="font-bold text-red-500">Head Chef</p>
-          <p class="text-gray-500 font-semibold">12 Year Experience</p>
-        </div>
-      </div>
-      <div
-        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
-        <div class="bg-[url(images/chef2.jpg)] rounded-2xl bg-cover h-[70%]"></div>
-        <div class=" text-center p-3">
-          <p class="font-bold text-xl">Michal Corn</p>
-          <p class="font-bold text-red-500">Grill Master</p>
-          <p class="text-gray-500 font-semibold">12 Year Experience</p>
-        </div>
-      </div>
-      <div
-        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
-        <div class="bg-[url(images/chef3.jpg)] rounded-2xl bg-cover h-[70%]"></div>
-        <div class=" text-center p-3">
-          <p class="font-bold text-xl">Faz Chowdel</p>
-          <p class="font-bold text-red-500">Pestry Chef</p>
-          <p class="text-gray-500 font-semibold">10 Year Experience</p>
-        </div>
-      </div>
-      <div
-        class=" rounded-2xl hover:translate-y-3 transition duration-300 hover:scale-105 hover:shadow-black shadow-2xl">
-        <div class="bg-[url(images/chef4.jpg)] rounded-2xl bg-cover h-[70%]"></div>
-        <div class=" text-center p-3">
-          <p class="font-bold text-xl">Willum Latinum</p>
-          <p class="font-bold text-red-500">Pizza Artist</p>
-          <p class="text-gray-500 font-semibold">9 Year Experience</p>
-        </div>
-      </div>
+  <div
+  class="grid grid-cols-4 gap-5 p-3 w-[85%]
+         lg:grid-cols-4
+         md:grid-cols-2
+         sm:grid-cols-1
+         sm:w-[95%]"
+  data-aos="fade-up"
+  data-aos="duration-3000"
+>
 
+  
+  <div
+    class="rounded-2xl hover:translate-y-3 transition duration-300
+           hover:scale-105 hover:shadow-black shadow-2xl
+           h-[50vh] md:h-[45vh] sm:h-[55vh]"
+  >
+    <div
+      class="bg-[url(images/chef.jpg)] rounded-2xl bg-cover bg-center
+             h-[70%]"
+    ></div>
+
+    <div class="text-center p-3">
+      <p class="font-bold text-xl sm:text-lg">Alice Mortal</p>
+      <p class="font-bold text-red-500">Head Chef</p>
+      <p class="text-gray-500 font-semibold">12 Year Experience</p>
     </div>
   </div>
 
-  <div class="h-[70vh] bg-green-900  flex justify-center gap-8 items-center ">
-    <div class="h-[50vh] w-[30%] font-bold p-6 rounded-3xl shadow-2xl text-yellow-50">
+
+
+  <div
+    class="rounded-2xl hover:translate-y-3 transition duration-300
+           hover:scale-105 hover:shadow-black shadow-2xl
+           h-[50vh] md:h-[45vh] sm:h-[55vh]"
+  >
+    <div
+      class="bg-[url(images/chef2.jpg)] rounded-2xl bg-cover bg-center
+             h-[70%]"
+    ></div>
+
+    <div class="text-center p-3">
+      <p class="font-bold text-xl sm:text-lg">Michal Corn</p>
+      <p class="font-bold text-red-500">Grill Master</p>
+      <p class="text-gray-500 font-semibold">12 Year Experience</p>
+    </div>
+  </div>
+
+
+  <div
+    class="rounded-2xl hover:translate-y-3 transition duration-300
+           hover:scale-105 hover:shadow-black shadow-2xl
+           h-[50vh] md:h-[45vh] sm:h-[55vh]"
+  >
+    <div
+      class="bg-[url(images/chef3.jpg)] rounded-2xl bg-cover bg-center
+             h-[70%]"
+    ></div>
+
+    <div class="text-center p-3">
+      <p class="font-bold text-xl sm:text-lg">Faz Chowdel</p>
+      <p class="font-bold text-red-500">Pestry Chef</p>
+      <p class="text-gray-500 font-semibold">10 Year Experience</p>
+    </div>
+  </div>
+
+
+  <div
+    class="rounded-2xl hover:translate-y-3 transition duration-300
+           hover:scale-105 hover:shadow-black shadow-2xl
+           h-[50vh] md:h-[45vh] sm:h-[55vh]"
+  >
+    <div
+      class="bg-[url(images/chef4.jpg)] rounded-2xl bg-cover bg-center
+             h-[70%]"
+    ></div>
+
+    <div class="text-center p-3">
+      <p class="font-bold text-xl sm:text-lg">Willum Latinum</p>
+      <p class="font-bold text-red-500">Pizza Artist</p>
+      <p class="text-gray-500 font-semibold">9 Year Experience</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+
+  <!-- eighth section  -->
+
+  <div class="min-h-[70vh] bg-green-900  flex justify-center gap-8 items-center lg:flex-row md:flex-col sm:flex-col">
+    <div class="min-h-[50vh] min-w-[30%] font-bold p-6 rounded-3xl shadow-2xl text-yellow-50">
       <div class="flex justify-between p-5 border-b-2 ">
         <p><i class="ri-calendar-line"></i>monday-Tuesday</p>
         <p>Closed</p>
@@ -644,7 +735,7 @@
         <p>Closed</p>
       </div>
     </div>
-    <div class=" h-[30vh] w-[20%] text-center rounded-3xl flex flex-col gap-2 text-white bg-orange-700">
+    <div class=" min-h-[30vh] min-w-[20%] text-center rounded-3xl flex flex-col gap-2 text-white bg-orange-700">
       <i class="ri-truck-fill text-6xl"></i>
       <p class="text-3xl">Order Online</p>
       <p class="text-xl">Get Hot Food Delivery In 20 Min</p>
@@ -652,7 +743,7 @@
           class="p-3 px-7 font-bold rounded-2xl bg-white text-xl text-orange-500 hover:translate-y-2 transition duration-300">Order
           Now?</button></div>
     </div>
-    <div class=" shadow-2xl text-yellow-50  rounded-3xl p-6 h-[35vh] w-[30%] flex flex-col gap-5 ">
+    <div class=" shadow-2xl text-yellow-50  rounded-3xl p-6 min-h-[35vh] min-w-[30%] flex flex-col gap-5 ">
       <i class="ri-map-pin-fill font-bold text-xl">Find Us</i>
       <div class="flex border-b-2 p-2 font-bold  justify-between">
         <i class="ri-map-pin-fill ">Address</i>
@@ -669,6 +760,7 @@
     </div>
   </div>
 
+  <!-- nineth section feedbacks -->
   <div class="h-[80vh] flex flex-col gap-10 justify-center">
     <div class="flex flex-col justify-center items-center ">
       <p class="text-orange-500 text-xl font-serif ">What People Says</p>
@@ -800,15 +892,17 @@
     </div>
   </div>
 
+  <!-- 10th booking section  -->
+
   <div class=" min-h-[100vh] bg-red-100">
-    <div class="flex justify-center flex-col items-center gap-3">
+    <div class="flex justify-center flex-col items-center gap-3 ">
       <p class="text-xl font-serif text-red-600">Book A Table</p>
       <h1 class="text-5xl font-bold">Make a <span class="text-red-600 border-b-4">Reservation</span></h1>
       <p class="text-center font-semibold">Reserve your table for a memorable dining experience. We <br> recommend booking 24 hours in advance for weekend <br> evenings.</p>
     </div>
 
-    <div class="flex  justify-evenly p-5">
-      <div class=" min-h-[50vh] p-5 border-2 w-[30%] bg-black text-white flex flex-col gap-3 rounded-3xl opacity-80">
+    <div class="flex  justify-evenly p-5 ">
+      <div class=" h-[50vh] p-5  w-[30%] bg-black text-white flex flex-col sm:hidden lg:flex md:hidden gap-3 rounded-3xl opacity-80">
         <p class="text-3xl font-serif">Contact Info</p>
         <p class="font-bold">We're happy to help you plan the perfect dining experience.</p>
 
@@ -841,57 +935,59 @@
           </div>
         </div>
       </div>
-      <div class=" min-h-[70vh] w-[60%] border-2 bg-white rounded-3xl">
-    <div class="flex p-5 justify-evenly ">
-        <div class="">
+      <div class=" min-h-[70vh] w-[60%] border-2 bg-white rounded-3xl font-bold">
+    <div class="flex p-5 justify-evenly gap-5">
+        <div class=" w-[50%]">
             <label for="name">Full Name*</label> <br>
-        <input class=" rounded-2xl py-2 px-30 border-2" type="text" placeholder="enter name">
+        <input class=" rounded-2xl py-2 px-3 border-2 w-[100%]" type="text" placeholder="enter name">
         </div>
-        <div class="">
+        <div class=" w-[50%]">
           <label for="Email">Phone Number*</label> <br>
-          <input class=" rounded-2xl py-2 px-30 border-2 " type="text" placeholder="+91 8847667126">
+          <input class=" rounded-2xl py-2 px-3 w-[100%] border-2 " type="text" placeholder="+91 8847667126">
         </div>
 
     </div>
-    <div class="flex p-5 justify-evenly">
-        <div class="">
+    <div class="flex p-5 justify-evenly gap-5">
+        <div class=" w-[50%]">
             <label for="Email">Email Address*</label> <br>
-        <input class=" py-2 px-30 rounded-2xl border-2" type="email" placeholder="Enter Emial">
+        <input class=" py-2 px-3 w-[100%] rounded-2xl border-2" type="email" placeholder="Enter Emial">
         </div>
-        <div class="">
+        <div class=" w-[50%]">
           <label for="Number">Number Of Guest*</label> <br>
-          <input class=" py-2 px-30 rounded-2xl border-2 " type="number" placeholder="1person">
+          <input class=" py-2 px-3 w-[100%] rounded-2xl border-2 " type="number" placeholder="1person">
         </div>
 
     </div>
-    <div class="flex p-5 justify-evenly">
-        <div class="">
+    <div class="flex p-5 justify-evenly gap-5">
+        <div class="w-[50%]">
             <label for="Date">Date*</label> <br>
-        <input class=" py-2 px-30 rounded-2xl border-2" type="date" placeholder="">
+        <input class=" py-2 px-3 w-[100%] rounded-2xl border-2" type="date" placeholder="">
         </div>
-        <div class="">
+        <div class=" w-[50%]">
           <label for="timeTime">Time*</label> <br>
-          <input class=" py-2 px-30 rounded-2xl border-2 " type="time" placeholder="09:00 AM">
+          <input class=" py-2 px-3 w-[100%] rounded-2xl border-2 " type="time" placeholder="09:00 AM">
         </div>
 
     </div>
 
-    <div class="box p-5">
+    <div class="box p-5 w-[100%]">
       <label for="discription">Special Request</label><br>
-      <textarea class=" rounded-2xl p-7 px-96 border-2" name="" id=""></textarea>
+      <textarea class=" rounded-2xl p-7 w-[100%]  border-2" name="" id=""></textarea>
     </div>
 
-  <div class="flex items-center justify-center ">
-      <button class=" px-72 py-3  hover:translate-y-2 transition duration-300 bg-orange-600 rounded-2xl ">Conferm Reservation</button>
+  <div class="flex items-center w-[100%] justify-center ">
+      <button class=" w-[70%] py-3  hover:translate-y-2 transition duration-300 font-bold bg-orange-600 rounded-2xl ">Conferm Reservation</button>
       </div>
       </div>
     </div>
   </div>
 
-  <div class="h-[50vh] bg-red-700 flex justify-center">
+<!-- 11th section emil sectin stay connected -->
+
+  <div class="h-[50vh] bg-red-700 flex justify-center ">
     <div class="flex flex-col gap-2 justify-center items-center text-white">
       <p class="text-2xl font-serif text-red-500">Stay Connected</p>
-      <p class="text-5xl font-bold">Subscribe And Get Exclusive <span class="text-red-500">Deals</span></p>
+      <p class="lg:text-5xl sm:text-3xl font-bold">Subscribe And Get Exclusive <span class="text-red-500">Deals</span></p>
       <p class="font-semibold">Get 15% off your first order plus early access to new menu items</p>
       <div class=" gap-3 w-full flex justify-center">
         <input type="email" class="border-2 w-[50%]  px-2 py-3 rounded-2xl bg-white">
@@ -902,6 +998,8 @@
     </div>
 
   </div>
+
+  <!-- footer section last -->
 <footer class="bg-black text-white px-6 md:px-10 lg:px-16 pt-14 pb-6">
 
   <!-- Footer Main -->
@@ -1144,6 +1242,8 @@
   </div>
 
 </footer>
+
+
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -1166,6 +1266,20 @@
       el: '.swiper-pagination',
       clickable: true,
     },
+            breakpoints: {
+            340: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+        },
   });
 </script>
 
