@@ -363,7 +363,7 @@
 
   </div>
 
-  <div class=" flex flex-col gap-5  bg-red-100">
+  <div class=" flex flex-col gap-4  bg-red-100 justify-center">
     <p class=" text-center font-mono text-red-300 text-2xl">Whats cooking</p>
     <h2 class="text-6xl  text-center font-bold ">Our Delicious <span class=" text-orange-600">Menu</span></h2>
     <div class="flex justify-center">
@@ -384,12 +384,12 @@
         </li>
       </ul>
     </div>
-    <div class="flex justify-center px-4 ">
-      <div class="grid grid-cols-3 gap-8 min-h-[120vh] w-[85%] md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 sm:h-max"
+    <div class="flex justify-center px-4">
+      <div class="grid grid-cols-3 gap-8 min-h-[130vh] w-[85%] md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 sm:h-max"
         data-aos="fade-up" data-aos="duration-3000">
         <div
           class="bg-white rounded-3xl hover:translate-y-2 sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/1.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/1.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-1 ">
             <p class="font-bold">BURGES</p>
             <P class="text-2xl font-serif ">Classic Smash Burger</P>
@@ -408,7 +408,7 @@
         </div>
         <div
           class="bg-white  rounded-3xl hover:translate-y-2  sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/all2.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/all2.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-2">
             <p class="font-bold">Pizza</p>
             <P class="text-2xl font-serif">Margherita Royale</P>
@@ -426,7 +426,7 @@
         </div>
         <div
           class="bg-white rounded-3xl hover:translate-y-2  sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/all3.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/all3.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-2">
             <p class="font-bold">Chicken</p>
             <P class="text-2xl font-serif">Nashville Hot Chicken</P>
@@ -444,7 +444,7 @@
         </div>
         <div
           class=" bg-white rounded-3xl hover:translate-y-2 sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/all4.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/all4.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-2">
             <p class="font-bold">WRAPS</p>
             <P class="text-2xl font-serif">Loaded Fajita Wrap</P>
@@ -462,7 +462,7 @@
         </div>
         <div
           class="bg-white rounded-3xl hover:translate-y-2  sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/all5.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/all5.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-2">
             <p class="font-bold">DESERTS</p>
             <P class="text-2xl font-serif">Nutella Lava Cake</P>
@@ -480,7 +480,7 @@
         </div>
         <div
           class="bg-white rounded-3xl hover:translate-y-2  sm:h-[40vh] lg:h-[55vh] hover:transition hover:duration-300 hover:shadow-2xl shadow-yellow-700">
-          <div class=" h-[55%] bg-[url(images/all6.jpg)] bg-cover bg-center rounded-2xl"></div>
+          <div class=" h-[50%] bg-[url(images/all6.jpg)] bg-cover bg-center rounded-2xl"></div>
           <div class=" flex flex-col gap-2">
             <p class="font-bold">PASTA</p>
             <P class="text-2xl font-serif">Truffle Mushroom Pasta</P>
@@ -498,7 +498,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center"><button
+    <div class="text-center mb-10"><button
         class=" rounded-3xl font-bold text-white p-3 px-10 bg-orange-600 hover:translate-y-2 transition duration-300  hover:shadow-orange-600">View
         Full Menu</button></div>
   </div>
@@ -841,11 +841,309 @@
           </div>
         </div>
       </div>
-      <div class="h-[70vh] w-[60%] border-2">
+      <div class="h-[70vh] w-[60%] border-2 bg-white rounded-3xl">
+    <div class="flex p-5 justify-evenly ">
+        <div class="">
+            <label for="name">Full Name*</label> <br>
+        <input class=" rounded-2xl py-2 px-30 border-2" type="text" placeholder="enter name">
+        </div>
+        <div class="">
+          <label for="Email">Phone Number*</label> <br>
+          <input class=" rounded-2xl py-2 px-30 border-2 " type="text" placeholder="+91 8847667126">
+        </div>
 
+    </div>
+    <div class="flex p-5 justify-evenly">
+        <div class="">
+            <label for="Email">Email Address*</label> <br>
+        <input class=" py-2 px-30 rounded-2xl border-2" type="email" placeholder="Enter Emial">
+        </div>
+        <div class="">
+          <label for="Number">Number Of Guest*</label> <br>
+          <input class=" py-2 px-30 rounded-2xl border-2 " type="number" placeholder="1person">
+        </div>
+
+    </div>
+    <div class="flex p-5 justify-evenly">
+        <div class="">
+            <label for="Date">Date*</label> <br>
+        <input class=" py-2 px-30 rounded-2xl border-2" type="date" placeholder="">
+        </div>
+        <div class="">
+          <label for="timeTime">Time*</label> <br>
+          <input class=" py-2 px-30 rounded-2xl border-2 " type="time" placeholder="09:00 AM">
+        </div>
+
+    </div>
+
+    <div class="box p-5">
+      <label for="discription">Special Request</label><br>
+      <textarea class=" rounded-2xl p-7 px-96 border-2" name="" id=""></textarea>
+    </div>
+
+  <div class="flex items-center justify-center ">
+      <button class=" px-72 py-3  hover:translate-y-2 transition duration-300 bg-orange-600 rounded-2xl ">Conferm Reservation</button>
+      </div>
       </div>
     </div>
   </div>
+
+  <div class="h-[50vh] bg-red-700 flex justify-center">
+    <div class="flex flex-col gap-2 justify-center items-center text-white">
+      <p class="text-2xl font-serif text-red-500">Stay Connected</p>
+      <p class="text-5xl font-bold">Subscribe And Get Exclusive <span class="text-red-500">Deals</span></p>
+      <p class="font-semibold">Get 15% off your first order plus early access to new menu items</p>
+      <div class=" gap-3 w-full flex justify-center">
+        <input type="email" class="border-2 w-[50%]  px-2 py-3 rounded-2xl bg-white">
+        <button class="px-9 py-3 bg-yellow-600 font-bold rounded-2xl"> Subscribe</button>
+      </div>
+      <p> <i class="ri-git-repository-private-fill"></i>No spam, unsubscribe anytime.</p>
+
+    </div>
+
+  </div>
+<footer class="bg-black text-white px-6 md:px-10 lg:px-16 pt-14 pb-6">
+
+  <!-- Footer Main -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+
+    <!-- Brand -->
+    <div>
+      <h1 class="text-4xl font-bold text-yellow-500 mb-4">
+        Sarab
+      </h1>
+
+      <p class="text-gray-400 leading-7 max-w-sm">
+        We bring the world's finest flavors together in a fast,
+        friendly, and affordable experience. Every meal crafted with love.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-3 mt-6">
+
+        <a href="#"
+          class="w-10 h-10 flex items-center justify-center rounded-full
+          border border-gray-700 text-gray-300
+          hover:bg-yellow-500 hover:text-black hover:border-yellow-500
+          transition duration-300">
+          <i class="ri-facebook-fill text-xl"></i>
+        </a>
+
+        <a href="#"
+          class="w-10 h-10 flex items-center justify-center rounded-full
+          border border-gray-700 text-gray-300
+          hover:bg-yellow-500 hover:text-black hover:border-yellow-500
+          transition duration-300">
+          <i class="ri-instagram-line text-xl"></i>
+        </a>
+
+        <a href="#"
+          class="w-10 h-10 flex items-center justify-center rounded-full
+          border border-gray-700 text-gray-300
+          hover:bg-yellow-500 hover:text-black hover:border-yellow-500
+          transition duration-300">
+          <i class="ri-twitter-fill text-xl"></i>
+        </a>
+
+        <a href="#"
+          class="w-10 h-10 flex items-center justify-center rounded-full
+          border border-gray-700 text-gray-300
+          hover:bg-yellow-500 hover:text-black hover:border-yellow-500
+          transition duration-300">
+          <i class="ri-youtube-fill text-xl"></i>
+        </a>
+
+        <a href="#"
+          class="w-10 h-10 flex items-center justify-center rounded-full
+          border border-gray-700 text-gray-300
+          hover:bg-yellow-500 hover:text-black hover:border-yellow-500
+          transition duration-300">
+          <i class="ri-tiktok-fill text-xl"></i>
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- Quick Links -->
+    <div>
+      <h2 class="text-xl font-semibold mb-5 pb-3 border-b border-gray-700">
+        Quick Links
+      </h2>
+
+      <ul class="space-y-3 text-gray-400">
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Menu
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Reservation
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Blog
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Our Menu -->
+    <div>
+      <h2 class="text-xl font-semibold mb-5 pb-3 border-b border-gray-700">
+        Our Menu
+      </h2>
+
+      <ul class="space-y-3 text-gray-400">
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Burger
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Pizza
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Fried Chicken
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Wraps & Rolls
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Pasta
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-yellow-500 transition">
+            Desserts
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Contact -->
+    <div>
+      <h2 class="text-xl font-semibold mb-5 pb-3 border-b border-gray-700">
+        Get In Touch
+      </h2>
+
+      <ul class="space-y-5">
+
+       
+        <li class="flex gap-4">
+          <i class="ri-map-pin-fill text-yellow-500 text-xl mt-1"></i>
+
+          <div>
+            <p class="font-medium">Address</p>
+            <p class="text-gray-400 text-sm mt-1">
+              42 Flavor Street, Amritsar, Punjab
+            </p>
+          </div>
+        </li>
+
+
+       
+        <li class="flex gap-4">
+          <i class="ri-phone-fill text-yellow-500 text-xl mt-1"></i>
+
+          <div>
+            <p class="font-medium">Phone</p>
+            <p class="text-gray-400 text-sm mt-1">
+              +91 98765 43210
+            </p>
+          </div>
+        </li>
+
+
+        
+        <li class="flex gap-4">
+          <i class="ri-mail-fill text-yellow-500 text-xl mt-1"></i>
+
+          <div>
+            <p class="font-medium">Email</p>
+            <p class="text-gray-400 text-sm mt-1 break-all">
+              info@sarab.com
+            </p>
+          </div>
+        </li>
+
+
+        <!-- Timing -->
+        <li class="flex gap-4">
+          <i class="ri-timer-2-fill text-yellow-500 text-xl mt-1"></i>
+
+          <div>
+            <p class="font-medium">Opening Hours</p>
+            <p class="text-gray-400 text-sm mt-1">
+              Mon - Sun: 10:00 AM - 11:00 PM
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Line -->
+  <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-6
+              flex flex-col md:flex-row justify-between items-center
+              gap-3 text-sm text-gray-500">
+
+    <p>
+      © 2026 Sarab. All Rights Reserved.
+    </p>
+
+    <div class="flex gap-5">
+      <a href="#" class="hover:text-yellow-500 transition">
+        Privacy Policy
+      </a>
+
+      <a href="#" class="hover:text-yellow-500 transition">
+        Terms & Conditions
+      </a>
+    </div>
+
+  </div>
+
+</footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
