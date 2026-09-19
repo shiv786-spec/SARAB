@@ -63,162 +63,379 @@
 </style>
 
 <body>
-  <div class="fixed z-10 w-[100%]">
-  <!-- header -->
-  <header class="lg:h-10 bg-black md:h-24 flex text-white  justify-evenly items-center">
-    <div class="icon w-[30%] flex justify-between text-xs">
-      <i class="ri-phone-fill ">+1(800)123-4567</i>
-      <i class="ri-mail-fill">helloshiv@gmail.com</i>
-      <i class="ri-map-pin-2-fill">42 Flavour Street, NY</i>
+<!-- ================= HEADER + NAVBAR ================= -->
+<div class="fixed top-0 left-0 z-50 w-full">
+
+  <!-- TOP HEADER -->
+  <header class="hidden lg:flex h-10 bg-black text-white items-center justify-between px-10">
+
+    <!-- Contact Info -->
+    <div class="flex items-center gap-8 text-xs">
+      <span class="flex items-center gap-1">
+        <i class="ri-phone-fill text-orange-500"></i>
+        +1 (800) 123-4567
+      </span>
+
+      <span class="flex items-center gap-1">
+        <i class="ri-mail-fill text-orange-500"></i>
+        helloshiv@gmail.com
+      </span>
+
+      <span class="flex items-center gap-1">
+        <i class="ri-map-pin-2-fill text-orange-500"></i>
+        42 Flavour Street, NY
+      </span>
     </div>
-    <div class="text-white w-[25%]  flex justify-between text-xl md:w-[30%]">
-      <button class=" font-semibold text-sm rounded-full bg-red-600 px-5"> <i class="ri-fire-fill"></i> FREE DELIVERY
-        TODAY!</button>
-      <i class="ri-facebook-circle-line hover:bg-red-600 hover:rounded-full text-2xl hover:border-2"></i>
-      <i class="ri-instagram-line  hover:bg-red-600 hover:rounded-full text-2xl hover:border-2"></i>
-      <i class="ri-tiktok-fill  hover:bg-red-600 hover:rounded-full text-2xl hover:border-2"></i>
-      <i class="ri-youtube-fill  hover:bg-red-600 hover:rounded-full text-2xl hover:border-2"></i>
+
+    <!-- Offer + Social -->
+    <div class="flex items-center gap-4">
+
+      <button
+        class="rounded-full bg-red-600 px-4 py-1 text-xs font-semibold
+               hover:bg-red-700 transition">
+        <i class="ri-fire-fill"></i>
+        FREE DELIVERY TODAY!
+      </button>
+
+      <a href="#" class="text-xl transition hover:text-orange-500">
+        <i class="ri-facebook-circle-line"></i>
+      </a>
+
+      <a href="#" class="text-xl transition hover:text-orange-500">
+        <i class="ri-instagram-line"></i>
+      </a>
+
+      <a href="#" class="text-xl transition hover:text-orange-500">
+        <i class="ri-tiktok-fill"></i>
+      </a>
+
+      <a href="#" class="text-xl transition hover:text-orange-500">
+        <i class="ri-youtube-fill"></i>
+      </a>
+
     </div>
   </header>
 
-  <!-- nav bar -->
-<nav class="min-h-20 min-w-full bg-white flex items-center justify-between px-5 lg:px-10">
 
-  
-  <div class="flex items-center gap-2">
+  <!-- ================= NAVBAR ================= -->
+  <nav
+    class="h-20 bg-white px-5 shadow-md
+           flex items-center justify-between
+           lg:px-10">
 
-    <div>
-      <i class="ri-restaurant-line text-2xl bg-orange-600 rounded-full p-2"></i>
-    </div>
+    <!-- LOGO -->
+    <a href="#home" class="flex items-center gap-2">
 
-    <div>
-      <h1 class="text-4xl font-bold sm:text-3xl">Sarab</h1>
-      <p class="text-sm font-light sm:text-[10px]">
-        FASTFOOD AND RESTOURANT
-      </p>
-    </div>
+      <div>
+        <i
+          class="ri-restaurant-line flex h-10 w-10 items-center
+                 justify-center rounded-full bg-orange-600
+                 text-xl text-white">
+        </i>
+      </div>
 
-  </div>
-
-
-  
-<ul class="font-semibold  w-[45%] justify-evenly lg:flex hidden">
-  <li>
-    <a href="#home" class="hover:text-orange-600">Home</a>
-  </li>
-
-  <li>
-    <a href="#about" class="hover:text-orange-600">About</a>
-  </li>
-
-  <li>
-    <a href="#menu" class="hover:text-orange-600">Menu</a>
-  </li>
-
-  <li>
-    <a href="#chefs" class="hover:text-orange-600">Chefs</a>
-  </li>
-
-  <li>
-    <a href="#reservation" class="hover:text-orange-600">Reservation</a>
-  </li>
-
-  <li>
-    <a href="#reviews" class="hover:text-orange-600">Reviews</a>
-  </li>
-
-  <li>
-    <a href="#contact" class="hover:text-orange-600">Contact</a>
-  </li>
-</ul>
-
-
-  
-  <div class="flex gap-4 items-center">
-
-   
-    <i class="ri-search-line text-2xl font-bold cursor-pointer"></i>
-
-   
-    <button
-      class="bg-orange-600 text-white px-6 py-2 rounded-3xl
-             hover:bg-orange-700 transition
-             sm:px-4 sm:py-2 sm:text-sm"
-    >
-      ORDER NOW
-    </button>
-
-   
-    <i
-      class="ri-menu-line text-3xl font-bold cursor-pointer lg:hidden"
-    ></i>
-
-  </div>
-
-</nav>
-</div>
-
-  <!-- home page -->
-  <div id="home"
-    class="relative z-0 flex min-h-screen  top-10 w-full items-center justify-center overflow-hidden bg-red-100 px-4 py-10 sm:px-6 md:min-h-[70vh] md:px-8 lg:min-h-[110vh] lg:px-12">
-    <h1
-      class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-serif text-[5rem] font-bold text-gray-900 opacity-10 sm:text-[8rem] md:text-[10rem] lg:text-[15rem] xl:text-[20rem]">
-      FOOD
-    </h1>
-
-    <div
-      class="relative z-10 flex w-full max-w-7xl flex-col items-center justify-center gap-10 sm:gap-12 md:gap-8 lg:flex-row lg:gap-16 xl:gap-24">
-
-      <div
-        class="flex w-full flex-col items-center gap-5 text-center sm:gap-6 md:w-[90%] lg:w-[50%] lg:items-start lg:text-left">
-
-        <button
-          class="rounded-3xl bg-white px-3 py-2 text-[10px] font-semibold shadow-sm sm:px-4 sm:text-xs md:text-sm">
-          <i class="ri-star-line mr-1 rounded-2xl bg-orange-500 p-2 text-lg text-white sm:text-xl"></i>
-          #1 RATED FAST FOOD RESTAURANT IN NEW YORK
-        </button>
-
-
-        <h1
-          class="font-serif text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          Delicious Fast Food For Every Moment
+      <div>
+        <h1 class="text-2xl font-bold leading-none sm:text-3xl">
+          Sarab
         </h1>
 
-        <p class="max-w-2xl text-sm font-light leading-6 text-gray-700 sm:text-base md:text-lg lg:text-xl">
-          Experience bold flavors crafted from premium ingredients. From
-          crispy burgers to gourmet pizzas - every bite is an adventure worth
-          savoring.
+        <p class="mt-1 text-[8px] font-medium tracking-wider text-gray-500 sm:text-[10px]">
+          FAST FOOD & RESTAURANT
         </p>
+      </div>
+
+    </a>
 
 
-        <div
-          class="flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+    <!-- DESKTOP MENU -->
+    <ul
+      class="hidden lg:flex items-center justify-center
+             gap-8 font-semibold">
 
-          <button
-            class="rounded-3xl bg-orange-500 px-5 py-4 font-bold text-white transition duration-300 hover:-translate-y-1 hover:shadow-2xl sm:px-6">
-            <i class="ri-restaurant-line"></i>
-            EXPLORE MENU
-          </button>
+      <li>
+        <a href="#home"
+           class="transition hover:text-orange-600">
+          Home
+        </a>
+      </li>
 
-          <button class="text-lg transition duration-300 hover:-translate-y-1 sm:text-xl">
-            <i
-              class="ri-play-circle-line mr-1 text-3xl text-orange-500 transition hover:rounded-full hover:bg-orange-600 hover:text-white"></i>
-            Watch Our Story
-          </button>
+      <li>
+        <a href="#about"
+           class="transition hover:text-orange-600">
+          About
+        </a>
+      </li>
 
-        </div>
+      <li>
+        <a href="#menu"
+           class="transition hover:text-orange-600">
+          Menu
+        </a>
+      </li>
+
+      <li>
+        <a href="#chefs"
+           class="transition hover:text-orange-600">
+          Chefs
+        </a>
+      </li>
+
+      <li>
+        <a href="#reservation"
+           class="transition hover:text-orange-600">
+          Reservation
+        </a>
+      </li>
+
+      <li>
+        <a href="#reviews"
+           class="transition hover:text-orange-600">
+          Reviews
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact"
+           class="transition hover:text-orange-600">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center gap-3 sm:gap-5">
+
+      <!-- SEARCH -->
+      <button
+        class="hidden sm:block text-xl transition
+               hover:text-orange-600">
+        <i class="ri-search-line"></i>
+      </button>
+
+      <!-- ORDER BUTTON -->
+      <a
+        href="#reservation"
+        class="rounded-full bg-orange-600
+               px-4 py-2 text-xs font-bold text-white
+               transition hover:-translate-y-1
+               hover:bg-orange-700 hover:shadow-lg
+               sm:px-6 sm:py-2.5 sm:text-sm">
+        ORDER NOW
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="lg:hidden text-3xl text-gray-800
+               transition hover:text-orange-600">
+        <i class="ri-menu-line"></i>
+      </button>
+
+    </div>
+
+  </nav>
+
+</div>
+
+
+<!-- ================= HOME SECTION ================= -->
+
+<section
+  id="home"
+  class="relative flex min-h-screen w-full
+         items-center justify-center overflow-hidden
+         bg-red-50 px-5 pt-28 pb-12
+         sm:px-8
+         md:pt-28
+         lg:min-h-[calc(100vh-40px)]
+         lg:px-12 lg:pt-32">
+
+
+  <!-- BACKGROUND TEXT -->
+  <h1
+    class="pointer-events-none absolute left-1/2 top-1/2
+           -translate-x-1/2 -translate-y-1/2
+           whitespace-nowrap
+           font-serif font-bold
+           text-[5rem] text-gray-900 opacity-[0.07]
+           sm:text-[8rem]
+           md:text-[11rem]
+           lg:text-[16rem]
+           xl:text-[20rem]">
+    FOOD
+  </h1>
+
+
+  <!-- CONTENT WRAPPER -->
+  <div
+    class="relative z-10 mx-auto flex w-full max-w-7xl
+           flex-col items-center justify-center
+           gap-12
+           lg:flex-row
+           lg:gap-16
+           xl:gap-24">
+
+
+    <div
+      class="flex w-full flex-col items-center
+             text-center
+             lg:w-1/2
+             lg:items-start
+             lg:text-left">
+
+
+      <div
+        class="mb-5 flex items-center rounded-full
+               bg-white px-2 py-2 shadow-md
+               sm:px-3">
+
+        <span
+          class="mr-2 flex h-8 w-8 items-center
+                 justify-center rounded-full
+                 bg-orange-500 text-white
+                 sm:h-9 sm:w-9">
+
+          <i class="ri-star-fill"></i>
+
+        </span>
+
+        <span
+          class="text-[9px] font-bold text-gray-700
+                 sm:text-xs md:text-sm">
+          #1 RATED FAST FOOD RESTAURANT
+        </span>
+
       </div>
 
 
-      <div class="flex w-full items-center justify-center sm:w-[80%] md:w-[70%] lg:w-[50%]">
-        <div
-          class="h-[250px] w-[250px] rounded-full bg-[url('/images/burger.png')] bg-cover bg-center bg-no-repeat sm:h-[320px] sm:w-[320px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px] xl:h-[520px] xl:w-[520px]"
-          data-aos="zoom-in" data-aos="duration-4000">
-        </div>
+      <h1
+        class="max-w-3xl font-serif
+               text-4xl font-bold leading-[1.1]
+               text-gray-900
+               sm:text-5xl
+               md:text-6xl
+               lg:text-6xl
+               xl:text-7xl">
+
+        Delicious Fast Food
+        <span class="text-orange-600">
+          For Every Moment
+        </span>
+
+      </h1>
+
+
+      <p
+        class="mt-5 max-w-xl text-sm
+               leading-6 text-gray-600
+               sm:text-base
+               md:text-lg">
+
+        Experience bold flavors crafted from premium
+        ingredients. From crispy burgers to gourmet
+        pizzas — every bite is an adventure worth
+        savoring.
+
+      </p>
+
+
+      <div
+        class="mt-7 flex w-full flex-col
+               items-center gap-4
+               sm:flex-row
+               sm:justify-center
+               lg:justify-start">
+
+        <a
+          href="#menu"
+          class="flex w-full items-center justify-center
+                 gap-2 rounded-full
+                 bg-orange-500 px-6 py-3.5
+                 text-sm font-bold text-white
+                 shadow-lg
+                 transition duration-300
+                 hover:-translate-y-1
+                 hover:bg-orange-600
+                 hover:shadow-xl
+                 sm:w-auto">
+
+          <i class="ri-restaurant-line"></i>
+          EXPLORE MENU
+
+        </a>
+
+
+        <a
+          href="#about"
+          class="flex items-center justify-center
+                 gap-2 text-sm font-semibold
+                 text-gray-800
+                 transition duration-300
+                 hover:-translate-y-1
+                 hover:text-orange-600
+                 sm:text-base">
+
+          <i
+            class="ri-play-circle-line
+                   text-3xl text-orange-500">
+          </i>
+
+          Watch Our Story
+
+        </a>
+
       </div>
 
     </div>
+
+
+    <div
+      class="flex w-full items-center
+             justify-center
+             lg:w-1/2">
+
+      <div
+        class="relative
+               h-[260px] w-[260px]
+               rounded-full
+               bg-[url('/images/burger.png')]
+               bg-cover
+               bg-center
+               bg-no-repeat
+               shadow-2xl
+
+               sm:h-[320px]
+               sm:w-[320px]
+
+               md:h-[400px]
+               md:w-[400px]
+
+               lg:h-[450px]
+               lg:w-[450px]
+
+               xl:h-[520px]
+               xl:w-[520px]"
+
+        data-aos="zoom-in"
+        data-aos-duration="1000">
+
+        <!-- ORANGE RING -->
+        <div
+          class="absolute -inset-3
+                 -z-10 rounded-full
+                 border-2 border-orange-400
+                 opacity-60
+                 sm:-inset-4">
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
+</section>
 
   <!-- moving bar -->
 
